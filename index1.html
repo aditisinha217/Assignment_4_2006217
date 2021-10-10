@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Aditi</title>
+    <style>
+      .flex-container {
+        display: flex;
+        width: 1000px;
+        height: 600px;
+        margin: 10px;
+        margin-left: 150px;
+        align-items: center;
+        border: 20px solid teal;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        align-content:space-around;
+      }
+
+      .flex-item {
+        width: 200px;
+        height: 60px;
+        padding: 22px;
+      }
+      #flex-item1{
+          flex-grow: 1.5;
+      }
+      #flex-item2{
+          align-self: flex-start;
+      }
+      section {
+        border: brown;
+      }
+
+      ul {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 565px;
+        margin-right: 570px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+      body {
+        background-image: url(img16.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top center;
+      }
+
+      .btn-grad {
+        background-image: linear-gradient(
+          to right,
+          #1e130c 0%,
+          #9a8478 51%,
+          #1e130c 100%
+        );
+      }
+
+      .btn-grad {
+        background-image: linear-gradient(
+          to right,
+          #000000 0%,
+          #e74c3c 51%,
+          #000000 100%
+        );
+      }
+      .btn-grad {
+        margin: 10px;
+        padding: 15px 45px;
+        margin-right: 500px;
+        margin-left: 550px;
+        margin-top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+      }
+
+      .btn-grad:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+      a{
+        color: #eee;
+      }
+      p{
+        color: grey;
+        font-size: 20px;
+        font-variant: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="btn-grad">FLEX BOX</h1>
+    <section>
+      <ul>
+        <li>Name: Aditi Sinha</li>
+        <li>Roll: 2006217</li>
+        <li>Branch: CSE-2</li>
+      </ul>
+    </section>
+    <div class="flex-container">
+      <div class="flex-item" id="flex-item1">
+        <img src="img1.jpg" alt="image-1" width="200px" height="150px" />
+      </div>
+      <div class="flex-item" id="flex-item2">
+        <img src="img2.jpg" alt="image-2" width="200px" height="150px" />
+      </div>
+      <div class="flex-item" id="flex-item3">
+        <img src="img3.jpg" alt="image-3" width="200px" height="150px" />
+      </div>
+      <div class="flex-item" id="flex-item4">
+        <img src="img4.jpg" alt="image-4" width="200px" height="150px" />
+      </div>
+      <div class="flex-item" id="flex-item5">
+        <img src="img5.jpg" alt="image-5" width="200px" height="150px" />
+      </div>
+      <div class="flex-item" id="flex-item6">
+        <img src="img6.jpg" alt="image-6" width="200px" height="150px" />
+      </div>
+      <div class="flex-item" id="flex-item7">
+        <img src="img7.jpg" alt="image-7" width="200px" height="150px" />
+      </div>
+      <div class="flex-item" id="flex-item8">
+        <img src="img8.jpg" alt="image-8" width="200px" height="150px" />
+      </div>
+    </div>
+    <p>LINK FOR BOX MODEL:</p>
+    <a href="index.html" target="blank">BOX MODEL</a>
+  </body>
+</html>
